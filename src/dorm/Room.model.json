@@ -1,0 +1,171 @@
+{
+  "ClassName": "Model",
+  "Children": [
+    {
+      "Name": "PH_Floor",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "Position": [
+          0,
+          -1,
+          0
+        ],
+        "Size": [
+          28,
+          2,
+          32
+        ],
+        "Color": [
+          0.4,
+          0.38,
+          0.32
+        ]
+      }
+    },
+    {
+      "Name": "PH_Wall",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "Position": [
+          -14,
+          8,
+          0
+        ],
+        "Size": [
+          1,
+          16,
+          32
+        ],
+        "Color": [
+          0.4,
+          0.45,
+          0.46
+        ]
+      }
+    },
+    {
+      "Name": "PH_Wall",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "Position": [
+          14,
+          8,
+          0
+        ],
+        "Size": [
+          1,
+          16,
+          32
+        ],
+        "Color": [
+          0.4,
+          0.45,
+          0.46
+        ]
+      }
+    },
+    {
+      "Name": "PH_Wall",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "Position": [
+          0,
+          8,
+          -16
+        ],
+        "Size": [
+          28,
+          16,
+          1
+        ],
+        "Color": [
+          0.4,
+          0.45,
+          0.46
+        ]
+      }
+    },
+    {
+      "Name": "PH_Wall",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "Position": [
+          0,
+          8,
+          16
+        ],
+        "Size": [
+          28,
+          16,
+          1
+        ],
+        "Color": [
+          0.4,
+          0.45,
+          0.46
+        ]
+      }
+    },
+    {
+      "Name": "Exit",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "Position": [
+          0,
+          2,
+          13
+        ],
+        "Size": [
+          4,
+          4,
+          2
+        ],
+        "Color": [
+          0.4,
+          0.6,
+          0.5
+        ]
+      },
+      "Children": [
+        {
+          "Name": "Interact",
+          "ClassName": "ProximityPrompt",
+          "Properties": {
+            "ActionText": "\u0e01\u0e25\u0e31\u0e1a\u0e42\u0e23\u0e07\u0e40\u0e23\u0e35\u0e22\u0e19",
+            "ObjectText": "\u0e2b\u0e2d\u0e1e\u0e31\u0e01\u0e17\u0e14\u0e25\u0e2d\u0e07",
+            "MaxActivationDistance": 10,
+            "HoldDuration": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PH_Bench",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "Position": [
+          0,
+          1,
+          0
+        ],
+        "Size": [
+          4,
+          2,
+          2
+        ],
+        "Color": [
+          0.6,
+          0.45,
+          0.3
+        ]
+      }
+    }
+  ]
+}

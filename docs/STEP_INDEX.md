@@ -1,0 +1,60 @@
+# ประวัติขั้นพัฒนา
+
+รายการนี้บันทึกผล ณ แต่ละขั้น จำนวน tests/สถานะเก่าไม่ใช่สถานะล่าสุด ดู [STATUS](STATUS.md) และ [README](../README.md)
+
+- Step 02: [บทฝึกยก/ลดผลึกและลองใหม่](STEP_02.md) — R/F ยก/ลด, G วาง, X ยกเลิก หรือกดปุ่มบนหน้าจอ
+- Step 03: [ระบบโหลด/บันทึกความก้าวหน้า](STEP_03.md) — Studio ใช้หน่วยความจำ; DataStore บน server จริงยังรอทดสอบ
+- Step 04: [ตรวจ Luau และทดสอบระบบข้อมูล](STEP_04.md) — compiler 8 ไฟล์และ mock tests 84 assertions ผ่าน; วิธีรันซ้ำอยู่ในเอกสาร
+- Step 05: [สมุดนักเรียน](STEP_05.md) — B หรือปุ่มบนจอ เปิดดูเวท บันทึก และเป้าหมาย; compiler 11 ไฟล์และ tests รวม 112 assertions ผ่าน ไม่เปิด Studio ตรวจตามคำสั่งล่าสุด
+- Step 06: [คู่หูต้นแบบ](STEP_06.md) — จบบทเรียนแล้วกด P หรือปุ่มเรียก/เก็บ ไม่มีโบนัสพลัง; compiler 16 ไฟล์และ tests รวม 140 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 07: [ห้องดันเจียนปริศนา](STEP_07.md) — เข้าประตูข้างแท่นบันทึกหลัง Stage 3 ใช้เวทเดิมแล้วกลับโรงเรียน; compiler 19 ไฟล์และ tests รวม 161 assertions ผ่าน
+- Step 08: [checkpoint และกู้คืนรัน](STEP_08.md) — ตายแล้วกลับเข้าประตูเพื่อไปต่อ เฉพาะ server เดิม; tests รวม 175 assertions ผ่าน ยังไม่ตรวจ runtime/ภาพ
+- Step 09: [แยกบริการบทเรียนและตรวจ lifecycle](STEP_09.md) — compiler 22 ไฟล์และ tests รวม 192 assertions ผ่าน ยังไม่ตรวจ runtime/ภาพ
+- Step 10: [ผู้เฝ้าฝึกและการหลบ](STEP_10.md) — encounter ทางเลือกเตือนก่อนโจมตี; compiler 26 ไฟล์และ tests รวม 210 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 11: [ใช้เวทหยุดผู้เฝ้า](STEP_11.md) — เริ่มที่แท่นช่วงพัก ยกผลึกระดับ 10 แล้ววาง; compiler 26 ไฟล์และ tests รวม 222 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 12: [ทดสอบ flow ข้ามบริการ](STEP_12.md) — compiler 27 ไฟล์และ tests รวม 247 assertions ผ่าน บริการจริงบน API doubles ยังไม่ใช่ Roblox runtime
+- Step 13: [เป้าหมายและสรุปดันเจียน](STEP_13.md) — HUD/checkpoint/รายละเอียดสมุด; compiler 29 ไฟล์และ tests รวม 296 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 14: [แยก HUD/ตัวควบคุมเวท](STEP_14.md) — cleanup ภาพและ event; compiler 33 ไฟล์และ tests รวม 307 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 15: [cleanup ของ controllers](STEP_15.md) — สมุด/คู่หู/คำเตือนผูกกับอายุ HUD; compiler 35 ไฟล์และ tests รวม 317 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 16: [ห้องพักและวางม้านั่ง](STEP_16.md) — เข้าประตูซ้ายแท่นบันทึก ใช้ปุ่มวาง/เก็บ/ย้าย/หมุน; compiler 39 ไฟล์ tests รวม 332 assertions ผ่าน เก็บข้อมูลเฉพาะ server session
+- Step 17: [ทดสอบหอพักสองผู้เล่น](STEP_17.md) — สิทธิ์/ตาย/ออก/คืน slot; compiler 40 ไฟล์ tests รวม 352 assertions ผ่าน ยังไม่ใช่ Roblox runtime หรือ persistence ห้อง
+- Step 18: [ฐานบันทึกห้องพร้อม lease](STEP_18.md) — schema/repository/tests; compiler 43 ไฟล์ tests รวม 373 assertions ผ่าน ยังไม่เชื่อม gameplay ห้องยังไม่บันทึกหลังออกเกม
+- Step 19: [เชื่อมบันทึกห้อง](STEP_19.md) — โหลด/เซฟ/renew/release เชื่อมแล้ว Studio ใช้ memory; compiler 46 ไฟล์ tests รวม 393 assertions ผ่าน ยังไม่ทดสอบ DataStore จริง
+- Step 20: [ทดสอบ persistence หอพักครบชุด](STEP_20.md) — ออกระหว่างโหลด/renew/shutdown บน API doubles; compiler 46 ไฟล์ tests รวม 425 assertions ผ่าน ยังไม่ทดสอบ DataStore จริง
+- Step 21: [preview วางเฟอร์นิเจอร์](STEP_21.md) — ย้าย/หมุนดูภาพก่อนยืนยันจริง; compiler 48 ไฟล์ tests รวม 437 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 22: [ทดสอบ preview controller](STEP_22.md) — Instance/event doubles ตรวจ draft/Commit/cleanup; compiler 49 ไฟล์ tests รวม 455 assertions ผ่าน ยังไม่ตรวจภาพ/runtime
+- Step 23: [catalog และ migration หลายชิ้น](STEP_23.md) — compiler 52 ไฟล์ tests รวม 476 assertions ผ่าน ยังไม่สลับ runtime จากห้อง v1
+- Step 24: [atomic migration และ writer admission](STEP_24.md) — compiler 54 ไฟล์ tests รวม 494 assertions ผ่าน ยังไม่สลับ writer/runtime หรือย้ายข้อมูลจริง
+- Step 25: [manager v2 หลายชิ้น](STEP_25.md) — deep snapshots/inventory admission; compiler 56 ไฟล์ tests รวม 517 assertions ผ่าน ยังไม่สลับ runtime จาก v1
+- Step 26: [service/UI v2 แบบทดลอง](STEP_26.md) — ใช้ experimental-v2.project.json; compiler 61 ไฟล์ tests รวม 525 assertions ผ่าน Build หลักยัง v1 และ v2 flow ยังรอตรวจ
+- Step 27: [v2 flow และ build หลัก](STEP_27.md) — compiler 62 ไฟล์ tests รวม 566 assertions ผ่าน เปิด v2 ใน default project local แล้ว ไม่เผยแพร่หรือย้ายข้อมูลจริง
+- Step 28: [audit ผู้เล่นใหม่และเอกสารปัจจุบัน](STEP_28.md) — compiler 62 ไฟล์ tests 600 assertions บน doubles ผ่าน ยังไม่ตรวจเกมจริง
+- Step 29: [เวทแสงนำทาง](STEP_29.md) — บททดลองที่สอง ผล session-only; compiler 66 ไฟล์ tests 663 assertions บน doubles ผ่าน
+- Step 30: [flow เวทแสงและสมุด](STEP_30.md) — service สองผู้เล่น/สถานะ session-only; compiler 69 ไฟล์ tests 691 assertions ผ่านบน doubles
+- Step 31: [แสง/HUD/สมุด client flow](STEP_31.md) — compiler 70 ไฟล์ tests 708 assertions ผ่านบน doubles ยังไม่ตรวจภาพจริง
+- Step 32: [จุดสำรวจแสงในสวน](STEP_32.md) — ปริศนาใหม่หลังเรียนแสงและบันทึก session-only; compiler 73 ไฟล์ tests 723 assertions ผ่านบน doubles
+- Step 33: [บริการปริศนาแสงร่วม](STEP_33.md) — config บทเรียน/สำรวจและป้องกันเปิดซ้อน; compiler 75 ไฟล์ tests 726 assertions ผ่านบน doubles
+- Step 34: [presentation แสงร่วม](STEP_34.md) — สลับบทเรียน/สวนและ cleanup ทั้งสอง; compiler 77 ไฟล์ tests 731 assertions ผ่านบน doubles
+- Step 35: [เวทม่านคุ้มกัน](STEP_35.md) — ฝึกจังหวะป้องกันเวทที่สาม session-only; compiler 81 ไฟล์ tests 744 assertions ผ่านบน doubles
+- Step 36: [flow โล่และสมุด](STEP_36.md) — server/client timing และ cleanup; compiler 83 ไฟล์ tests 767 assertions ผ่านบน doubles
+- Step 37: [ม่านคุ้มกันกับผู้เฝ้า](STEP_37.md) — server cast/strike และ UI เดิม; compiler 84 ไฟล์ tests 776 assertions ผ่านบน doubles
+- Step 38: [guard lifecycle](STEP_38.md) — cast เก่า/ตาย/พัก/เปลี่ยนรันและ UI readiness; compiler 85 ไฟล์ tests 793 assertions ผ่านบน doubles
+- Step 39: [ShieldAction ร่วมผู้เฝ้าหลายคน](STEP_39.md) — ฝึก→กัน→ตาย/พัก ผ่านบริการจริงบน doubles; compiler 86 ไฟล์ tests 808 assertions
+- Step 40: [ตัวตรวจดัมมี่เทียบทะเบียน](STEP_40.md) — source scan ฉาก/generator ตรง ASSET_TRACKER 58 แถว; fixture tests 7 ผ่าน ไม่มี gameplay ใหม่
+- Step 41: [กำหนดแทนดัมมี่ตามระยะ](STEP_41.md) — สถานะ/ระยะต่อแถว เตือนในระยะ ล้มเมื่อเลย; fixture tests 10 ผ่าน
+- Step 42: [ตัวตรวจดัมมี่ในขั้นตรวจหลักและ CI](STEP_42.md) — check_luau เรียกก่อน compile, workflow push/PR, กฎ attribute; tests 11 ผ่าน
+- Step 43: [attribute ดัมมี่ที่ generator](STEP_43.md) — แสง/ผลึก/เป้าหมายตั้ง PlaceholderId; ตรวจค่า attribute 16 ชิ้น แก้ PH_JournalToggle; check_luau ผ่าน 86 ไฟล์ 841 assertions
+- Step 44: [test attribute ดัมมี่ทุก generator](STEP_44.md) — Pet/Encounter/Levitation/หอพัก + กฎระดับวัตถุ; compiler 87 ไฟล์ tests 871 assertions
+- Step 45: [รางวัลกับข้อมูลจริงร่วมกัน](STEP_45.md) — รับ/เซฟ/ออก/เข้าใหม่/รับซ้ำ/store ล่ม บน services จริง; compiler 88 ไฟล์ tests 886 assertions
+- Step 46: [บันทึกเวทที่เรียนผ่าน](STEP_46.md) — progress schema v2 (D54) แสง/โล่ถาวร; compiler 88 ไฟล์ tests 927 assertions
+- Step 47: [ดันเจียน 3 ห้อง](STEP_47.md) — ปริศนา → ผู้เฝ้า (สองทาง) → ห้องจบ; compiler 88 ไฟล์ tests 1028 assertions
+- Step 48: [คัมภีร์เวทพื้นฐาน](STEP_48.md) — 5 หน้าในสมุด + บันทึกการจบดันเจียน (schema v3); compiler 90 ไฟล์ tests 1070 assertions
+- Step 49: [ศัตรูบทบาท 2–3](STEP_49.md) — ผู้ยิงระยะไกล + ผู้ซ่อนเงาในห้อง 2; compiler 90 ไฟล์ tests 1171 assertions
+- Step 50: [คู่หูละอองหูใบ](STEP_50.md) — ชื่อ + ความผูกพัน 3 ขั้น บันทึกถาวร (schema v4); compiler 90 ไฟล์ tests 1227 assertions
+- Step 51: [ฉาก blockout ตามผัง](STEP_51.md) — Academy 800×680 + ดันเจียนขนาดใหม่; compiler 90 ไฟล์ tests 1227 assertions
+- Step 52: [ตรวจใน Studio จริง](STEP_52.md) — เวลาเดิน ห้อง 2 ตาย/กลับรัน และแก้ 3 จุดที่พบ; tests 1228 assertions
+- Step 53: [ตรวจ Studio ส่วนที่เหลือ](STEP_53.md) — คู่หู ห้อง 1/3 หอพัก มือถือจำลอง แก้ 5 จุด; tests 1234 assertions
+- Step 54: [คำใบ้ปุ่มตามอุปกรณ์และแสงบ่ายแก่](STEP_54.md) — KeyHint, ClockTime 16.5; compiler 91 ไฟล์ tests 1236 assertions
+- Step 55: [blockout รอบ 2](STEP_55.md) — วัสดุ ห้องเรียน แลนด์มาร์ก ป้าย เพดานดันเจียน; tests 1236 assertions
+
+- Step 56: [คลื่นโจมตีผู้เฝ้าและขั้นความชำนาญ](STEP_56.md) — compile 95 ไฟล์ / 1291 assertions บน doubles; ยังไม่ตรวจภาพหรือเกมจริงของ combat ชุดนี้

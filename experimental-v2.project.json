@@ -1,0 +1,45 @@
+{
+  "name": "MythicAcademyExperimentalV2",
+  "serveAddress": "127.0.0.1",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "MythicAcademy": {
+        "$path": "src/shared"
+      },
+      "DormV2Enabled": {
+        "$className": "BoolValue",
+        "$properties": {
+          "Value": true
+        }
+      }
+    },
+    "ServerScriptService": {
+      "MythicAcademy": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "MythicAcademy": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "Workspace": {
+      "AcademyPrototype": {
+        "$path": "src/world"
+      }
+    },
+    "ServerStorage": {
+      "MythicAcademy": {
+        "$path": "src/dorm"
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "ClockTime": 16.5
+      }
+    }
+  }
+}
